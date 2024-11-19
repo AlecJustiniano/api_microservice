@@ -57,5 +57,3 @@ def deletar_atividade(id_atividade):
         return '', 204
     except atividade_model.AtividadeNotFound:
         return jsonify({'message': 'Atividade não encontrada'}), 404
-
-
